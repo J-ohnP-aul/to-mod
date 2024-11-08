@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>todo md</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="container">
-    <div class="stats-container">
-      <div class="details">
-        <h1>To do app</h1>
-        <p>do kitu man</p>
-        <div id="proressBar">
-          <div id="progress"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo md</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="stats-container">
+        <div class="details">
+          <h1>To do app</h1>
+          <p>do kitu man</p>
+          <div id="proressBar">
+            <div id="progress"></div>
+          </div>
+        </div>
+        <div class="startsNumber">
+          <p id="numbers">0 / 0</p>
         </div>
       </div>
-      <div class="startsNumber">
-        <p id="numbers">0 / 0</p>
-      </div>
+
+      <form action="">
+        <input type="text" id="taskInput" placeholder="pliz input ur task" />
+        <button type="submit" id="newTask">+</button>
+      </form>
+
+      <ul id="task-list"></ul>
     </div>
-
-    <form action="">
-      <input type="text" id="taskInput" placeholder="pliz input ur task">
-      <button type="submit" id="newTask">+</button>
-    </form>
-
-    <ul id="task-list">
-      
-
-    </ul>
-  </div>
-  <script src="main.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
